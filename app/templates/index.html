@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Portfolio | Alan Andrew Varghese</title>
+    <meta http-equiv="refresh" content="3">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+<body class="bg-secondary text-primary">
+    <header class="bg-white shadow-lg fixed top-0 left-0 w-full z-10">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row md:justify-between md:items-center">
+            
+            <div class="flex justify-between">
+            <a href="#" class="text-xl font-bold text-accent">Alan Andrew Varghese</a>
+            
+            <button id="nav-toggle" class="md:hidden text-xl focus:outline-none text-accent">
+                ☰
+            </button>
+            </div>
+
+            <div id="nav-links" class="hidden md:flex">
+                <hr class="border-2 w-full mt-1">
+                <ul class="flex flex-col items-center md:flex-row">
+                    <li class="border-b-1 border-accent-light w-[40%] text-center md:border-0"><a href="#" class="text-accent hover:text-accent-hover block py-2 px-4">Home</a></li>
+                    <li class="border-b-1 border-accent-light w-[50%] text-center md:border-0"><a href="#" class="text-accent hover:text-accent-hover block py-2 px-4">About</a></li>
+                    <li class="border-b-1 border-accent-light w-[60%] text-center md:border-0"><a href="#" class="text-accent hover:text-accent-hover block py-2 px-4">Services</a></li>
+                    <li class="border-b-1 border-accent-light w-[70%] text-center md:border-0"><a href="#" class="text-accent hover:text-accent-hover block py-2 px-4">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-secondary mt-[65px] grid grid-cols-1 md:grid-cols-3">
+        <div class="rounded-full flex justify-center items-center py-4">
+            <img class="max-w-[50%] rounded-full mx-auto" src="{{ url_for('static', filename='images/avatar.avif') }}">
+        </div>
+        <div class="container mx-auto px-4 pb-20 md:py-20 text-left ml-2 col-span-2">
+            <h1 class="text-4xl md:text-6xl font-bold">Hi, I'm <span class="text-accent">Alan</span></h1>
+            <h2 class="text-2xl md:text-4xl font-bold">Aspiring Web Developer</h1>
+            <p class="mt-4 text-lg"> 
+                I'm an aspiring web developer with a strong foundation in computer science and a passion for creating visually compelling and user-friendly websites. 
+                My expertise includes web design, with a focus on responsive layouts and engaging user experiences. 
+                I'm also skilled in using Tailwind CSS to streamline styling, and I enjoy bringing creative ideas to life through clean, well-structured code.
+                <br><br>
+                In addition to front-end development, I have a growing interest in project management, which helps me organize my work and collaborate effectively. 
+                I'm constantly expanding my skill set through hands-on projects, and I'm excited to build a diverse portfolio that showcases my journey as a developer.
+            </p>
+            <div class="pt-4 flex flex-row gap-3">
+                <a href="https://github.com/alanandrewvarghese" target="_blank" class="text-gray-800 hover:text-accent">
+                    <i class="fab fa-github text-3xl text-secondary hover:text-accent"></i>
+                </a>
+                <a href="https://https://www.linkedin.com/in/alanandrewvarghese/" target="_blank" class="text-blue-600 hover:text-blue-700">
+                    <i class="fab fa-linkedin-in text-3xl text-secondary hover:text-accent"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mx-auto px-4 py-16 grid gap-4">
+        <h2 class="text-4xl text-center font-bold">My Skills</h2>
+        <div class="grid justify-center items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-6 p-6">
+            <div class="flex items-center justify-center h-32 w-32 bg-primary text-secondary font-bold rounded-lg shadow-md">
+                <span class="iconify text-7xl" data-icon="vscode-icons:file-type-html"></span>
+            </div>
+            <!-- CSS -->
+        <div class="flex items-center justify-center h-32 w-32 bg-primary text-secondary font-bold rounded-lg shadow-md">
+            <span class="iconify text-7xl" data-icon="vscode-icons:file-type-css"></span>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="flex items-center justify-center h-32 w-32 bg-primary text-secondary font-bold rounded-lg shadow-md">
+            <span class="iconify text-7xl" data-icon="logos:javascript"></span>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div class="flex items-center justify-center h-32 w-32 bg-primary text-secondary font-bold rounded-lg shadow-md">
+            <span class="iconify text-7xl" data-icon="logos:tailwindcss-icon"></span>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="flex items-center justify-center h-32 w-32 bg-primary text-secondary font-bold rounded-lg shadow-md">
+            <span class="iconify text-7xl" data-icon="logos:bootstrap"></span>
+          </div>
+
+          <!-- Git -->
+          <div class="flex items-center justify-center h-32 w-32 bg-primary text-secondary font-bold rounded-lg shadow-md">
+            <span class="iconify text-7xl" data-icon="logos:git-icon"></span>
+          </div>
+
+          <!-- Visual Studio Code -->
+          <div class="flex items-center justify-center h-32 w-32 bg-primary text-secondary font-bold rounded-lg shadow-md">
+            <span class="iconify text-7xl" data-icon="logos:visual-studio-code"></span>
+          </div>
+
+          <!-- Python -->
+          <div class="flex items-center justify-center h-32 w-32 bg-primary text-secondary font-bold rounded-lg shadow-md">
+            <span class="iconify text-7xl" data-icon="logos:python"></span>
+          </div>
+
+          <!-- Django -->
+          <div class="flex items-center justify-center h-32 w-32 bg-primary text-secondary font-bold rounded-lg shadow-md">
+            <span class="iconify text-7xl text-secondary" data-icon="logos:django-icon"></span>
+          </div>
+
+          </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-primary text-secondary py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2024 Alan Andrew Varghese. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
